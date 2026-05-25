@@ -503,7 +503,7 @@
     /* 超小屏手机 (iPhone SE, 小屏Android) - 320px-374px */
     @media (max-width: 374px) {
       .posters-scroll {
-        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 0 12px 20px;
       }
@@ -1641,28 +1641,33 @@
         version: "v2.0",
         updatedDate: "2026-05-26",
         changelog: "更新为用户自定义内容 - 真实影视配置",
-        
+
+        gridConfig: {
+          mobileColumns: 3,
+          desktopColumns: 4,
+          gap: 12,
+          autoFit: false
+        },
+
         content: {
           carousel: [
-            { img: 'https://m.media-amazon.com/images/M/MV5BMjViM2Y4ZmYtYjY5Ni00M2QyLWJkMzItZmEzMzMyNzIzZWZkXkEyXkFqcGc@._V1_QL75_UX582_.jpg', title: 'Off Campus: Amores Improváveis', duration: '2:30', mainTitle: 'A história de amor inesperada entre um estudante de música e o famoso jogador de hóquei da universidade, que explora temas de amor e as complexidades da vida adulta por meio de amizades profundas e laços duradouros', mainSubtitle: '' },
-            { img: 'https://m.media-amazon.com/images/S/pv-target-images/58fdd428fe3d0414f3ec954fe6e740a85369a251191dcc9baa7d9881f5a9d3ab.jpg', title: 'A Casa do Dragão', duration: '3:45', mainTitle: 'A história da House Targaryen se passa 200 anos antes dos eventos de \'Game of Thrones\'', mainSubtitle: 'Trailer mais recente da 3ª temporada, fique ligado!' },
-            { img: 'https://m.media-amazon.com/images/M/MV5BNTBiMWQ2MTAtZWY0ZC00ZTRhLWI5NTItMTZjMWE4NjEyZTFmXkEyXkFqcGc@._V1_.jpg', title: 'Minions & Monstros', duration: '7:22', mainTitle: 'Os Minions embarcam em uma jornada para encontrar criaturas assustadoras para aparecerem em seu filme de monstros', mainSubtitle: '' },
-            { img: 'https://m.media-amazon.com/images/M/MV5BY2YwMjFkMmItOTJhMC00NWY3LWE4NGMtODdlNTAzY2VhMjkzXkEyXkFqcGc@._V1_.jpg', title: 'Moana (2026)', duration: '2:58', mainTitle: 'Adaptação em live-action do filme de animação da Disney de 2016 "Moana".', mainSubtitle: 'Último trailer, fique ligado!' },
-            { img: 'https://m.media-amazon.com/images/M/MV5BYjgxNzQ5NGEtNmI1NS00MjBhLWEwMmUtMDIwZmIyMTIyNDYwXkEyXkFqcGc@._V1_.jpg', title: 'Star Wars: O Mandaloriano e Grogu', duration: '1:48', mainTitle: 'Outrora um caçador de recompensas solitário, o Mandaloriano Din Djarin e seu aprendiz Grogu embarcam em uma nova e empolgante aventura de Guerra nas Estrelas', mainSubtitle: '' }
+            { img: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1200&h=675&fit=crop', title: 'Mortal Kombat 2', duration: '5:19', mainTitle: 'Mortal Kombat 2: O Elenco Revela Segredos das Gravações Épicas', mainSubtitle: 'Confira bastidores exclusivos. Assista agora.' },
+            { img: 'https://images.unsplash.com/photo-1534809027769-b00d750a6bac?w=1200&h=675&fit=crop', title: 'Dune: Parte Dois', duration: '3:45', mainTitle: 'Dune: Parte Dois - A Jornada Épica de Paul Atreides Continua', mainSubtitle: 'O deserto chama. A guerra começa. Não perca.' },
+            { img: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=1200&h=675&fit=crop', title: 'Oppenheimer', duration: '7:22', mainTitle: 'Oppenheimer: A História do Pai da Bomba Atômica', mainSubtitle: 'Cillian Murphy em sua melhor performance. Assistir é obrigatório.' },
+            { img: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=1200&h=675&ft=crop', title: 'The Bear S3', duration: '2:58', mainTitle: 'The Bear Temporada 3: A Cozinha Nunca Esteve Tão Intensa', mainSubtitle: 'Novos pratos, novos desafios. A pressão aumenta.' }
           ],
           posters: [
-            { img: 'https://m.media-amazon.com/images/M/MV5BZGI5MDkzN2EtZDVkOC00MWZjLTg5NGYtOGEyYjFlMTkxM2ExXkEyXkFqcGc@._V1_.jpg', title: 'Mortal Kombat 2', meta: '2026 • ⭐ 9.5' },
-            { img: 'https://ingresso-a.akamaihd.net/prd/img/movie/mestres-do-universo/66ee5705-10e2-41cd-a864-ef8d6cae5b26.webp', title: 'Mestres Do Universo', meta: '2026 • ⭐ 9.0' },
-            { img: 'https://ingresso-a.akamaihd.net/prd/img/movie/love-kills/7d9bb52d-32b6-4377-845b-645c3a67e362.webp', title: 'Love Kills', meta: 'Apple TV+ • ⭐ 9.3' },
-            { img: 'https://ingresso-a.akamaihd.net/prd/img/movie/authentic-games-no-imperio-desconectado/336226b6-94cf-4bd3-8fb8-19a32bcfae51.webp', title: 'Authentic Games No Império Desconectado', meta: 'Série • ⭐ 9.8' },
-            { img: 'https://ingresso-a.akamaihd.net/prd/img/movie/des-controle/ccbf4826-e4dd-40d6-b0f5-24d1eb9125b1.webp', title: '(Des)controle', meta: '2026 • ⭐ 8.7' },
-            { img: 'https://ingresso-a.akamaihd.net/prd/img/movie/la-la-land-uci-day-2026/d9c85ad1-7932-475f-a98d-13702677d6bb.webp', title: 'La La Land - UCI Day 2026', meta: 'BR • ⭐ 8.2' },
-            { img: 'https://ingresso-a.akamaihd.net/prd/img/movie/passageiro-do-mal/ca08d370-73bb-4a44-98cc-bd9b89d277d7.webp', title: 'Passageiro Do Mal', meta: '2026 • ⭐ 7.8' },
-            { img: 'https://ingresso-a.akamaihd.net/prd/img/movie/the-amazing-digital-circus-o-ultimo-ato/542c8160-c171-4132-a989-fd0daa89b2f4.webp', title: 'The Amazing Digital Circus: O Último Ato', meta: '2026 • ⭐ 9.1' },
-            { img: 'https://m.media-amazon.com/images/M/MV5BNTJlOTRhMGMtOTI5MC00ZmEyLWE3NDItMDBiMDRkYTFiMTY2XkEyXkFqcGc@._V1_.jpg', title: 'Devoradores de Estrelas', meta: '2026 • ⭐ 8.0' }
+            { img: 'https://images.unsplash.com/photo-1534809027769-b00d750a6bac?w=280&h=420&fit=crop', title: 'Dune: Parte Dois', meta: '2026 • ⭐ 9.5' },
+            { img: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=280&h=420&fit=crop', title: 'Oppenheimer', meta: '2026 • ⭐ 9.0' },
+            { img: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=280&h=420&fit=crop', title: 'The Bear S3', meta: 'Série • ⭐ 9.8' },
+            { img: 'https://images.unsplash.com/photo-1635805737707-575885ab0820?w=280&h=420&fit=crop', title: "Marvel's Blade", meta: '2026 • ⭐ 8.7' },
+            { img: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=280&h=420&fit=crop', title: 'Eu Te Amo', meta: 'BR • ⭐ 8.2' },
+            { img: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=280&h=420&fit=crop', title: 'Severance S2', meta: 'Apple TV+ • ⭐ 9.3' },
+            { img: 'https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=280&h=420&fit=crop', title: 'A Noite do Terror', meta: '2026 • ⭐ 7.8' },
+            { img: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=280&h=420&ft=crop', title: 'Stranger Things', meta: 'Netflix • ⭐ 9.1' }
           ],
-          mainTitle: 'A história de amor inesperada entre um estudante de música e o famoso jogador de hóquei da universidade, que explora temas de amor e as complexidades da vida adulta por meio de amizades profundas e laços duradouros',
-          mainSubtitle: ''
+          mainTitle: 'Mortal Kombat 2: O Elenco Revela Segredos das Gravações Épicas',
+          mainSubtitle: 'Confira bastidores exclusivos. Assista agora.'
         }
       };
       
@@ -1696,7 +1701,8 @@
           timestamp: Date.now(),
           content: CONTENT_CONFIG.content,
           updatedDate: CONTENT_CONFIG.updatedDate,
-          changelog: CONTENT_CONFIG.changelog
+          changelog: CONTENT_CONFIG.changelog,
+          gridConfig: CONTENT_CONFIG.gridConfig || { mobileColumns: 3, desktopColumns: 4, gap: 12, autoFit: false }
         };
         
         localStorage.setItem(STORAGE_KEY, JSON.stringify(newCache));
