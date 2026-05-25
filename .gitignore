@@ -1,0 +1,32 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+temp-posters.txt
+.cache/
+
+# Sensitive data (should not be committed)
+*.env
+*.key
+config.local.json
+
+# Server scripts (local development only)
+start-server*.ps1
+
+# Documentation (optional)
+CUSTOMIZATION-GUIDE.md
+GITHUB-DEPLOY-GUIDE.md
